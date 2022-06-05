@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
+using System.Threading;
 
 namespace CajunSpice
 {
@@ -15,6 +17,18 @@ namespace CajunSpice
             if (args.Length == 0) { Console.ForegroundColor = ConsoleColor.Red; Console.Write("No input file set!"); Console.ReadKey(); }
             else
             {
+                Console.WriteLine("Checking for updates...");
+                Updater update = new Updater(Updater.GetUpdate());
+                if (!update.IsRunningLatest())
+                {
+                    string changeLogString = "";
+                    foreach (string text in update.ChangeLog) { changeLogString += text + "\n"; }
+                    MessageBox.Show("New update available!\n\nVersion: " + update.LatestVersion + "\nDownload Size: " + update.UpdateSize + "\nChangelog:\n\n" + changeLogString);
+                }
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("No updates found!");
+                Thread.Sleep(1000);
+                Console.Clear();
                 path = args[0];
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("CajunSpice v1.0 - ");
@@ -25,6 +39,7 @@ namespace CajunSpice
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("https://github.com/miso-xyz/CajunSpice/\n");
                 new Deobfuscator(args[0]).Fix();
+                Console.ReadKey();
             }
         }
     }
