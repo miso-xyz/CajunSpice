@@ -3,8 +3,8 @@
 AppName			= CajunSpice
 Version			= 1.0
 DownloadLink		= https://github.com/miso-xyz/UniShield/releases/download/v1.0/CajunSpice.zip
-SHA256_Checksum		= C474391CFC83DE367404B93CC2B554656FD20C2916BC010F0B0E68AA229EBCB2
-UpdateSize		= 735kb
+SHA256_Checksum		= 11F4C941AC9920EE1536DE00251169A356BAB54463E65BB0F5A5EC38B22B1515
+UpdateSize		=6 15kb
 
 [CHANGELOG]
 Nothing yet
