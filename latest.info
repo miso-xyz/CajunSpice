@@ -1,0 +1,10 @@
+## This file contains update information for UniShield
+
+AppName			= CajunSpice
+Version			= 1.0
+DownloadLink		= https://github.com/miso-xyz/UniShield/releases/download/v1.0/CajunSpice.zip
+SHA256_Checksum		= C474391CFC83DE367404B93CC2B554656FD20C2916BC010F0B0E68AA229EBCB2
+UpdateSize		= 735kb
+
+[CHANGELOG]
+Nothing yet
