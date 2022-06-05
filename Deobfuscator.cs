@@ -47,7 +47,6 @@ namespace CajunSpice
             Save();
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("File saved at '" + Environment.CurrentDirectory + "\\" + Path.GetFileNameWithoutExtension(asmPath) + "-CajunSpice" + Path.GetExtension(asmPath) + "!");
-            Console.ReadKey();
         }
 
         public void Save()
