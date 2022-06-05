@@ -12,5 +12,8 @@ Xor String Encryption | Yes
 Hidden String Protection | Yes
 Proxy | Yes
 
+# Preview
+<img src="https://i.imgur.com/rvYRe7T.png">
+
 # Credits
 - <a href="https://github.com/0xd4d">0xd4d</a> - <a href="https://github.com/0xd4d/dnlib">dnlib</a>
